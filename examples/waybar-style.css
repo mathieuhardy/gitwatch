@@ -1,0 +1,11 @@
+/* gitwatch classes: clean | dirty | ahead | behind | diverged
+   | unpublished | conflict | error */
+#custom-gitwatch            { padding: 0 10px; }
+#custom-gitwatch.clean      { color: #a6e3a1; }
+#custom-gitwatch.dirty      { color: #f9e2af; }
+#custom-gitwatch.ahead      { color: #89b4fa; }
+#custom-gitwatch.behind     { color: #fab387; }
+#custom-gitwatch.diverged   { color: #f5c2e7; }
+#custom-gitwatch.unpublished{ color: #94e2d5; }
+#custom-gitwatch.conflict   { color: #f38ba8; font-weight: bold; }
+#custom-gitwatch.error      { color: #eba0ac; }
