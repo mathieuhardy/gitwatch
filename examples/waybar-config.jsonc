@@ -1,0 +1,17 @@
+// Add this custom module to your Waybar config and place "custom/gitwatch"
+// in one of the modules-left/center/right arrays.
+//
+// - "interval": 300  -> re-run every 5 min (each run fetches every repo).
+// - "signal": 8      -> `pkill -RTMIN+8 waybar` forces an immediate refresh
+//                       (the rofi script does this right after a sync).
+// - on-click launches the rofi picker; adjust the path to the script.
+{
+  "custom/gitwatch": {
+    "exec": "gitwatch waybar_status $HOME/dev",
+    "return-type": "json",
+    "interval": 300,
+    "signal": 8,
+    "on-click": "~/.config/waybar/scripts/rofi-gitmenu.sh",
+    "tooltip": true
+  }
+}
